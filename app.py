@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide"
 )
 
-API_KEY = os.getenv("GOOGLE_API_KEY")
+API_KEY = os.getenv("GOOGLE_GENERATIVEAI_API_KEY")
 genai.configure(api_key=API_KEY)
 modelo = genai.GenerativeModel("gemini-pro")
 
