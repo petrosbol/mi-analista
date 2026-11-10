@@ -11,7 +11,7 @@ st.set_page_config(
 
 API_KEY = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=API_KEY)
-modelo = genai.GenerativeModel("gemini-2.0-flash")
+modelo = genai.GenerativeModel("gemini-1.5-flash")
 
 # ---------------- FUNCIONES ----------------
 def analizar(activo):
